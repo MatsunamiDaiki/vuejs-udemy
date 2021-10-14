@@ -4,22 +4,8 @@ import LikeNumber from "./components/LikeNumber.vue";
 
 Vue.config.productionTip = false;
 Vue.component("LikeNumber", LikeNumber);
-Vue.directive("border",{
-  bind(){
-    
-  },
-  inserted(){
-
-  },
-  update(){
-
-  },
-  componentUpdated(){
-
-  },
-  unbind(){
-
-  },
+Vue.filter("upperCase",function(value){
+  value.toUpperCase()
 })
 
 new Vue({
